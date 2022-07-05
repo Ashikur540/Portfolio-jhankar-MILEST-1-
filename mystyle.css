@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
+
+body {
+  font-family: "DM Sans", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  
+}
+
+/* Hero section  */
+H1 {
+  font-size: 2.9rem;
+}
+.flex{
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10%;
+ }
+.half-width {
+  width: 40vw;
+  /* display: inline-block; */
+  float: left;
+  margin-left: 6%;
+}
+
+.body-text {
+  font-size: 16px;
+  color: rgb(80, 80, 50);
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+.cta {
+ 
+  padding: 10px 32px;
+  text-decoration: none;
+  background: linear-gradient(89.98deg, #88D3CE 0.02%, #AFA5D2 51.18%, #6E45E2 107.97%);
+  color: aliceblue;
+  border-radius: 5%;
+  font-weight:600 ;
+  background-size: 400%;
+  background-position: 90% 0;
+  transition: background .8s;
+}
+.cta:hover {
+  /* background: linear-gradient(89.98deg, #6E45E2 0.02%, #AFA5D2 51.18%, #88D3CE 107.97%); */
+  background-position: 185% 50%;
+}
+.text-yellow{
+  color: rgb(248, 164, 53);
+}
+.profile-img {
+  margin-left:5% ;
+  width: 70%;
+  float: left;
+}
+
+#hero{
+  background-image: url(Img/top-banner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#experience{
+  background-image: url(Img/exp-bg.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.full-stack{
+  width: 30%;
+  margin-left: 5%;
+  margin-bottom: 5%;
+  padding: 3%;
+  /* border: 2px solid red; */
+  border-left: 5px solid blueviolet;
+  box-shadow: 10px 10px 40px gray;
+  border-radius: 3%;
+}
+.jr-dev{
+  width: 30%;
+  margin-left: 5%;
+  margin-bottom: 5%;
+  padding: 3%;
+  /* border: 2px solid red; */
+  border-left: 5px solid(89.98deg, #88D3CE 0.02%, #AFA5D2 51.18%, #6E45E2 107.97%);;
+  box-shadow: 10px 10px 40px gray;
+  border-radius: 3%;
+}
+footer{
+  text-align: center;
+}
+
+
+/* media query  */
+
+@media only screen and (max-width: 760px) {
+  .flex{
+    flex-direction: column;
+  }
+  .half-width{
+    width: 80vw;
+  }
+  .profile-img {
+    margin-left:5% ;
+    margin-top:15% ;
+    width: 80%;
+    /* float: left; */
+  }
+  #experience{
+    background-image: none;
+  }
+}
